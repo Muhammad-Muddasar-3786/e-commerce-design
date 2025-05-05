@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <title>Product Detail Page</title>
+    <meta name="description" content="Product detail page" />
+    <link rel="stylesheet" href="./css/style3.css">
+    <!-- Required Lovable script tag -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="container header-flex">
+          <div class="logo">
+            <span class="logo-icon">L</span>
+            Lovable Store
+          </div>
+          <div class="search">
+            <input type="text" placeholder="Search products...">
+            <button class="search-btn">
+              <span>🔍</span>
+            </button>
+          </div>
+          <div class="header-actions">
+            <button class="action-btn">New</button>
+            <div class="icons">
+              <span>❤️</span>
+              <span>🛒</span>
+              <span>👤</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ul class="main-nav">
+            <li class="active">Home</li>
+            <li>Products</li>
+            <li>Categories</li>
+            <li>Deals</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+          <div class="language">
+            <img src="https://placehold.co/20x15/red/white?text=US" alt="US Flag" class="flag-icon">
+            <span>English</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="breadcrumb">
+        Home <span>›</span> Products <span>›</span> Clothing <span>›</span> Men's Polo
+      </div>
+
+      <div class="product-details">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img src="https://placehold.co/300x350/e0e0e0/gray?text=Gray+Polo" alt="Product Image">
+          </div>
+          <div class="thumbnail-images">
+            <img src="https://placehold.co/50x50/e0e0e0/gray" alt="Gray Polo" class="active">
+            <img src="https://placehold.co/50x50/ffffff/gray" alt="White Polo">
+            <img src="https://placehold.co/50x50/2d2d2d/white" alt="Black Polo">
+            <img src="https://placehold.co/50x50/0033cc/white" alt="Blue Polo">
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="product-header">
+            <h1>Premium Men's Polo Shirt</h1>
+            <div class="ratings">
+              <div class="stars">
+                ★★★★☆ <span>4.2</span>
+              </div>
+              <div class="reviews">
+                <span>📋 142 Reviews</span>
+                <span>✓ 230 Orders</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-container">
+            <div>
+              <span class="current-price">$32.50</span>
+              <span class="original-price">$45.00</span>
+            </div>
+            <div class="stock-status">In Stock</div>
+          </div>
+
+          <table class="product-attributes">
+            <tr>
+              <td>Brand:</td>
+              <td>Lovable Apparel</td>
+            </tr>
+            <tr>
+              <td>Material:</td>
+              <td>100% Cotton</td>
+            </tr>
+            <tr>
+              <td>Size:</td>
+              <td>S, M, L, XL, XXL</td>
+            </tr>
+            <tr>
+              <td>Colors:</td>
+              <td>Gray, White, Black, Blue</td>
+            </tr>
+          </table>
+
+          <div class="customization">
+            <p>Customizable Options:</p>
+            <p>- Add your logo (+ $5.00)</p>
+            <p>- Gift wrap available (+ $2.00)</p>
+          </div>
+
+          <div class="product-actions">
+            <div class="quantity">
+              <button class="qty-btn minus">-</button>
+              <input type="number" value="1" min="1" class="qty-input">
+              <button class="qty-btn plus">+</button>
+            </div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <button class="outline-btn">Select Sample</button>
+
+          <div class="save-item">
+            <input type="checkbox" id="save">
+            <label for="save">Save for later</label>
+          </div>
+        </div>
+
+        <div class="similar-items">
+          <h3>Similar Items</h3>
+          <div class="item-cards">
+            <div class="item-card">
+              <div class="item-image">
+                <img src="https://placehold.co/60x60/0033cc/white" alt="Blue Polo">
+              </div>
+              <div class="item-details">
+                <p>Premium Blue Polo</p>
+                <p class="item-info">S, M, L, XL</p>
+                <p class="item-price">$34.99</p>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="item-image">
+                <img src="https://placehold.co/60x60/2d2d2d/white" alt="Black Polo">
+              </div>
+              <div class="item-details">
+                <p>Classic Black Polo</p>
+                <p class="item-info">S, M, L, XL</p>
+                <p class="item-price">$29.99</p>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="item-image">
+                <img src="https://placehold.co/60x60/ffffff/gray" alt="White Polo">
+              </div>
+              <div class="item-details">
+                <p>Elegant White Polo</p>
+                <p class="item-info">S, M, L, XL</p>
+                <p class="item-price">$31.50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tabs">
+        <div class="tab-header">
+          <div class="tab-btn active" data-tab="description-tab">Description</div>
+          <div class="tab-btn" data-tab="specs-tab">Specifications</div>
+          <div class="tab-btn" data-tab="reviews-tab">Reviews</div>
+          <div class="tab-btn" data-tab="shipping-tab">Shipping</div>
+        </div>
+
+        <div id="description-tab" class="tab-content active">
+          <p>This premium men's polo shirt is made from 100% cotton material, providing comfort and durability for everyday wear. The classic design features a three-button placket, ribbed collar, and short sleeves with ribbed armbands.</p>
+          <p>Perfect for casual outings, office wear, or any semi-formal events. The breathable fabric makes it ideal for warm weather, while the timeless style ensures you'll look great in any setting.</p>
+          
+          <div class="features">
+            <div class="feature">
+              <span>✓</span>
+              <p>Moisture-wicking fabric keeps you cool and dry</p>
+            </div>
+            <div class="feature">
+              <span>✓</span>
+              <p>Reinforced seams for increased durability</p>
+            </div>
+            <div class="feature">
+              <span>✓</span>
+              <p>Easy care: machine wash, tumble dry low</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="specs-tab" class="tab-content">
+          <div class="specs">
+            <div class="spec-col">
+              <h4>Materials</h4>
+              <p>100% Premium Cotton</p>
+              <p>180 GSM fabric weight</p>
+              <p>Pre-shrunk material</p>
+              
+              <h4>Design</h4>
+              <p>Classic fit</p>
+              <p>Three-button placket</p>
+              <p>Ribbed collar and sleeve bands</p>
+            </div>
+            
+            <div class="spec-col">
+              <h4>Sizes</h4>
+              <p>S: 36-38 inches chest</p>
+              <p>M: 39-41 inches chest</p>
+              <p>L: 42-44 inches chest</p>
+              <p>XL: 45-47 inches chest</p>
+              <p>XXL: 48-50 inches chest</p>
+              
+              <h4>Care Instructions</h4>
+              <p>Machine wash cold</p>
+              <p>Tumble dry low</p>
+              <p>Do not bleach</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="reviews-tab" class="tab-content">
+          <p>Customer Reviews - Average Rating: 4.2 ★★★★☆</p>
+          <div class="reviews-list">
+            <div class="review">
+              <p><strong>John D.</strong> ★★★★★</p>
+              <p>Great quality polo shirt! The fabric is soft and comfortable, and the fit is perfect. I ordered two more in different colors.</p>
+            </div>
+            <div class="review">
+              <p><strong>Sarah M.</strong> ★★★★☆</p>
+              <p>Nice shirt overall. The material feels premium. I wish there were more color options though.</p>
+            </div>
+            <div class="review">
+              <p><strong>Michael T.</strong> ★★★☆☆</p>
+              <p>Decent quality, but slightly larger than expected. Consider ordering a size down.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="shipping-tab" class="tab-content">
+          <p>Shipping Information:</p>
+          <div class="features">
+            <div class="feature">
+              <span>🚚</span>
+              <p>Standard Shipping: 3-5 business days (Free on orders over $50)</p>
+            </div>
+            <div class="feature">
+              <span>⚡</span>
+              <p>Express Shipping: 1-2 business days ($12.99)</p>
+            </div>
+            <div class="feature">
+              <span>🌎</span>
+              <p>International Shipping: 7-14 business days (Rates vary by location)</p>
+            </div>
+            <div class="feature">
+              <span>↩️</span>
+              <p>Free 30-day returns on all unworn items</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="related-products">
+        <h2>You May Also Like</h2>
+        <div class="product-carousel">
+          <div class="product-card">
+            <img src="https://placehold.co/150x150/e0e0e0/gray" alt="Product">
+            <div class="product-info">
+              <h3>Casual Oxford Shirt</h3>
+              <div class="product-meta">
+                <span class="product-rating">★★★★☆</span>
+                <span class="product-price">$49.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://placehold.co/150x150/e0e0e0/gray" alt="Product">
+            <div class="product-info">
+              <h3>V-Neck T-Shirt</h3>
+              <div class="product-meta">
+                <span class="product-rating">★★★★★</span>
+                <span class="product-price">$24.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://placehold.co/150x150/e0e0e0/gray" alt="Product">
+            <div class="product-info">
+              <h3>Button-Down Shirt</h3>
+              <div class="product-meta">
+                <span class="product-rating">★★★☆☆</span>
+                <span class="product-price">$39.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://placehold.co/150x150/e0e0e0/gray" alt="Product">
+            <div class="product-info">
+              <h3>Striped Sweater</h3>
+              <div class="product-meta">
+                <span class="product-rating">★★★★☆</span>
+                <span class="product-price">$54.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://placehold.co/150x150/e0e0e0/gray" alt="Product">
+            <div class="product-info">
+              <h3>Casual Jeans</h3>
+              <div class="product-meta">
+                <span class="product-rating">★★★★★</span>
+                <span class="product-price">$59.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://placehold.co/150x150/e0e0e0/gray" alt="Product">
+            <div class="product-info">
+              <h3>Canvas Jacket</h3>
+              <div class="product-meta">
+                <span class="product-rating">★★★★☆</span>
+                <span class="product-price">$79.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="discount-banner">
+        <div>
+          <h2>Get 10% Off Your First Order!</h2>
+          <p>Sign up for our newsletter to receive a discount code.</p>
+        </div>
+        <button class="discount-btn">Sign Up Now</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <div class="logo">
+              <span class="logo-icon">L</span>
+              Lovable Store
+            </div>
+            <p>Your one-stop shop for premium quality clothing and accessories.</p>
+            <div class="social-icons">
+              <a href="#">📱</a>
+              <a href="#">📘</a>
+              <a href="#">📷</a>
+              <a href="#">🐦</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#">Men's Clothing</a></li>
+              <li><a href="#">Women's Clothing</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Sale</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Shipping Info</a></li>
+              <li><a href="#">Returns Policy</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>About</h4>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Sustainability</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Download Our App</h4>
+            <div class="app-links">
+              <a href="#">App Store</a>
+              <a href="#">Google Play</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© 2023 Lovable Store. All rights reserved.</p>
+          <div class="language-selector">
+            <img src="https://placehold.co/20x15/red/white?text=US" alt="US Flag" class="flag-icon">
+            <span>English (US)</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script3.js"></script>
+  </body>
+</html>
+
+<!-- okk -->
